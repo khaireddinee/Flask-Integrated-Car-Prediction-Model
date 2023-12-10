@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
@@ -13,14 +12,20 @@
 
 <body>
  <div class="login">
-	<h1>Flower Class Prediction</h1>
+	<h1>Car Price Prediction</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required" />
-        <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required" />
-		<input type="text" name="Petal_Length" placeholder="Petal_Length" required="required" />
-		<input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" />
+    	<input type="text" name="make" placeholder="make" required="required" />
+        <input type="text" name="num-of-doors" placeholder="Number of doors" required="required" />
+		<input type="text" name="body-style" placeholder="Body Style" required="required" />
+		<input type="text" name="drive-wheels" placeholder="drive wheels" required="required" />
+    <input type="text" name="engine-type" placeholder="Engine Type" required="required" />
+    <input type="text" name="num-of-cylinders" placeholder="Number of cylinders" required="required" />
+    <input type="text" name="fuel-system" placeholder="fuel system" required="required" />
+    <input type="text" name="horse-power" placeholder="horse power" required="required" />
+    <input type="text" name="peak-rpm" placeholder="peak rpm" required="required" />
+    <input type="text" name="city-mpg" placeholder="city mpg" required="required" />
+    <input type="text" name="highway-mpg" placeholder="highway mpg" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
